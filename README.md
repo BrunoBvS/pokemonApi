@@ -142,9 +142,21 @@ curl --location --request GET 'http://localhost:8080/pokemon/<id>'
 * **NOTE:** Here is used the "id" property and not the "number" property, as there are many Pokemons sharing the same "number", but then having different "id" values!
 
 ### Read a page of Pokemons (GET)
-```
-curl --location --request GET 'http://localhost:8080/pokemon'
-```
+* If no params are informed, the default pagination will be 10 (and with implied offset of 0)
+  * `curl --location --request GET 'http://localhost:8080/pokemon'`
+* Even when informed through `max` param, the maximum pagination size will always be 100 (and implied offset of 0)
+  * `curl --location --request GET 'http://localhost:8080/pokemon?max=50'`
+* To go through the next pages, use the `offset` param:
+  * Page 1 (max 100 and offset 0   ) `curl --location --request GET 'http://localhost:8080/pokemon?max=100&offset=0'`
+  * Page 2 (max 100 and offset 100 ) `curl --location --request GET 'http://localhost:8080/pokemon?max=100&offset=100'`
+  * Page 3 (max 100 and offset 200 ) `curl --location --request GET 'http://localhost:8080/pokemon?max=100&offset=200'`
+  * Page 4 (max 100 and offset 300 ) `curl --location --request GET 'http://localhost:8080/pokemon?max=100&offset=300'`
+  * Page 5 (max 100 and offset 400 ) `curl --location --request GET 'http://localhost:8080/pokemon?max=100&offset=400'`
+  * Page 6 (max 100 and offset 500 ) `curl --location --request GET 'http://localhost:8080/pokemon?max=100&offset=500'`
+  * Page 7 (max 100 and offset 600 ) `curl --location --request GET 'http://localhost:8080/pokemon?max=100&offset=600'`
+  * Page 8 (max 100 and offset 700 ) `curl --location --request GET 'http://localhost:8080/pokemon?max=100&offset=700'`
+  * Page 9 (max 100 and offset 800 ) `curl --location --request GET 'http://localhost:8080/pokemon?max=100&offset=800'`
+  * ...
 
 ### Update a Pokemon (PUT & PATCH)
 ```

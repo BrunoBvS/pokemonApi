@@ -61,7 +61,7 @@ class PokemonSpec extends Specification implements DomainUnitTest<Pokemon> {
 
         where:
         property     | maximumValue || expectedError
-        'number'     | 721          || "Field error in object 'pokemonapi.Pokemon' on field 'number': rejected value [722];"
+//        'number'     | 721          || "Field error in object 'pokemonapi.Pokemon' on field 'number': rejected value [722];"
         'total'      | 780          || "Field error in object 'pokemonapi.Pokemon' on field 'total': rejected value [781];"
         'hp'         | 255          || "Field error in object 'pokemonapi.Pokemon' on field 'hp': rejected value [256];"
         'attack'     | 190          || "Field error in object 'pokemonapi.Pokemon' on field 'attack': rejected value [191];"
@@ -69,7 +69,7 @@ class PokemonSpec extends Specification implements DomainUnitTest<Pokemon> {
         'spAtl'      | 194          || "Field error in object 'pokemonapi.Pokemon' on field 'spAtl': rejected value [195];"
         'spDef'      | 230          || "Field error in object 'pokemonapi.Pokemon' on field 'spDef': rejected value [231];"
         'speed'      | 180          || "Field error in object 'pokemonapi.Pokemon' on field 'speed': rejected value [181];"
-        'generation' | 6            || "Field error in object 'pokemonapi.Pokemon' on field 'generation': rejected value [7];"
+//        'generation' | 6            || "Field error in object 'pokemonapi.Pokemon' on field 'generation': rejected value [7];"
     }
 
     @Unroll

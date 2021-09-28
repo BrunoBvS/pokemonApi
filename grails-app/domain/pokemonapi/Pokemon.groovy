@@ -20,7 +20,7 @@ class Pokemon {
     Boolean legendary
 
     static constraints = {
-        number min: 1, max: 721
+        number min: 1/*, max: 721*/
         name nullable: false, blank: false
         type1 nullable: false, blank: false
         type2 nullable: true, blank: false
@@ -33,7 +33,7 @@ class Pokemon {
         spAtl min: 10, max: 194
         spDef min: 20, max: 230
         speed min: 5, max: 180
-        generation min: 1, max: 6
+        generation min: 1/*, max: 6*/
         legendary nullable: false
     }
 

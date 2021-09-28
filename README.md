@@ -26,6 +26,14 @@
   * java -version
   * NOTE: This project was built using: Grails Version: 4.0.12
 
+## How to run the tests (unit and integration) of the project
+* Open the "pokemonApi" root folder of this project, just where is this "README.md" and execute the command:
+  * grails test-app
+* The application should download everything it needs, compile, and run the tests, ending with a message showing:
+  * Tests PASSED
+  * NOTE: The first execution might need a few minutes do download, compile and configure, but the next executions will start up a lot faster
+* Open the file "build\reports\tests\index.html" in your browser to see the results
+
 ## How to run the project
 
 * Open the "pokemonApi" root folder of this project, just where is this "README.md" and execute the command:
@@ -39,6 +47,18 @@
 **IMPORTANT NOTES:** 
 * The boot of the application will already parse the pokemons from the resource "src\main\resources\pokemon.csv" to the memory
   * The file was obtained from the provided url : https://gist.github.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6
+
+[comment]: <> (* The ending/closing of the application will write back the pokemons from the memory to the resource "src\main\resources\pokemon.csv", so that the next boot will continue with the changed data from the previous execution, similarly to a database.)
+
+[comment]: <> (* To "restart" the database to the original settings &#40;original provided "pokemon.csv" file&#41;:)
+
+[comment]: <> (  * Stop the application)
+
+[comment]: <> (  * Discard the local changes made in this specific file with the GIT command:)
+
+[comment]: <> (    * git checkout HEAD -- src/main/resources/pokemon.csv)
+
+[comment]: <> (  * Restart the application)
 
 ## CRUD Operations
 

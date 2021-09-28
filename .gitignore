@@ -31,3 +31,17 @@
 
 # "temporary" build files
 /target
+
+# Intellij approach of Ignored Files
+Thumbs.db
+.DS_Store
+.gradle
+build/
+out/
+.idea
+*.iml
+*.ipr
+*.iws
+.project
+.settings
+.classpath

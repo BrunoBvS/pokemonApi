@@ -41,9 +41,7 @@ The goal of the technical exercise is to create a small project that will expose
 
 There is no required framework or technology, although we recommend using the Ruby on Rails  framework. We also encourage you to write unit tests, although this is not a requirement.
 
-You will have access to a CSV file (link below) that contains a list of Pokémon. This file will act  as a database, so we ask you to expose an API from this list to perform CRUD (Create, Read,
-
-Update, Delete) actions. We would also like to get a paginated list of all Pokémon in the file.
+You will have access to a CSV file (link below) that contains a list of Pokémon. This file will act  as a database, so we ask you to expose an API from this list to perform CRUD (Create, Read, Update, Delete) actions. We would also like to get a paginated list of all Pokémon in the file.
 
 Once the project is finished you should share the project link with us in your GitHub or similar solution.
 
